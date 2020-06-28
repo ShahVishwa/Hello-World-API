@@ -18,26 +18,31 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
 	private static final Logger logger = LogManager.getLogger(HelloWorldController.class);
+	private static final String MESSAGE_WITHOUT_ACCEPT_HEADERS = "<p>Hello, World</p>";
+	private static final String MESSAGE_WITH_ACCEPT_HEADERS = "{'message' : 'Hello, World'}";
+	private static final String CONTENT_TYPE_HTML = "text/html";
+	private static final String CONTENT_TYPE_JSON = "application/json";
+	private static final String REQUEST_URL ="/";
 	private String message;
 
-	@RequestMapping("/")
+	@RequestMapping(REQUEST_URL)
 	public String hello() {
 		logger.debug(
 				"Calling GET request without an accept header" + " at: " + new Timestamp(System.currentTimeMillis()));
-		this.message = "<p>Hello, World</p>";
+		this.message = MESSAGE_WITHOUT_ACCEPT_HEADERS;
 		return message;
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json", consumes = "text/html")
+	@RequestMapping(value = REQUEST_URL, method = RequestMethod.GET, produces = CONTENT_TYPE_JSON, consumes = CONTENT_TYPE_HTML)
 	@ResponseBody
 	public String helloWithAcceptHeader() {
 		logger.debug("Calling GET request with an accept header as: " + new HttpHeaders() + " at: "
 				+ new Timestamp(System.currentTimeMillis()));
-		this.message = "{'message' : 'Hello, World'}";
+		this.message = MESSAGE_WITH_ACCEPT_HEADERS;
 		return message;
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.POST, produces = "application/json", consumes = MediaType.ALL_VALUE)
+	@RequestMapping(value = REQUEST_URL, method = RequestMethod.POST, produces = CONTENT_TYPE_JSON, consumes = MediaType.ALL_VALUE)
 	public ResponseEntity<String> postMethod(@RequestBody String message) {
 		logger.debug("Calling POST request with an accept header as: " + new HttpHeaders() + " at: "
 				+ new Timestamp(System.currentTimeMillis()));
