@@ -6,9 +6,9 @@
 3. The Debug Log Level is OFF by default. To enable debug logging level go to src/main/resources/application.properties and change the value of two parameters as shown below and re-run the application to see the debug logger in console:
   1. logging.level.org.springframework=DEBUG
   2. logging.level.root=WARN
-4. After starting/running the application, open POSTMAN tool and create GET http request http://localhost:8080/. The result received in the body area of response section will be: "<p>Hello, World</p>"
-5. Create GET request with accept headers to http://localhost:8080/. To add Accept header in Postman go to headers tab in the request area and Add Key as "Content-Type" and value as "text/html". Press "Send". The result received in the body area of response section will be "{'message' : 'Hello, World'}"
-6. Create POST request by providing a JSON body of either your choice or using "{"message":"Hello! World"}" and result received in the body area of response section will be "{"message":"Hello! World"}"
+4. After starting/running the application, open POSTMAN tool and create GET http request http://localhost:8080/. Press "Send" button. The result received in the body area of response section will be: "<p>Hello, World</p>"
+5. Create GET request with accept headers to http://localhost:8080/. To add Accept header in Postman go to headers tab in the request area and Add Key as "Content-Type" and value as "text/html". Press "Send" button. The result received in the body area of response section will be "{'message' : 'Hello, World'}"
+6. Create POST request by providing a JSON body of either your choice or using "{"message":"Hello! World"}". Press "Send" button. The result received in the body area of response section will be "{"message":"Hello! World"}"
 
 *cURL commands to start the application from command prompt:
 1. Run the application from IDE as Spring Boot Application
