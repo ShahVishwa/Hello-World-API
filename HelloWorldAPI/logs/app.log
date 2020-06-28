@@ -1,0 +1,590 @@
+2020-06-28 10:45:24,908 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 9292 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 10:45:24,914 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 10:45:24,914 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 10:45:27,381 DEBUG o.s.w.c.ContextLoader [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-28 10:45:27,383 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 2397 ms
+2020-06-28 10:45:28,335 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-06-28 10:45:28,562 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-28 10:45:28,626 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [main] 5 mappings in 'requestMappingHandlerMapping'
+2020-06-28 10:45:28,670 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-06-28 10:45:28,681 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-28 10:45:29,080 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 6.833 seconds (JVM running for 13.654)
+2020-06-28 10:45:58,882 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-06-28 10:45:58,890 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2020-06-28 10:45:58,990 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-28 10:45:58,990 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 100 ms
+2020-06-28 10:45:58,999 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] GET "/", parameters={}
+2020-06-28 10:45:59,015 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.helloWithAcceptHeader()
+2020-06-28 10:45:59,033 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request with an accept header as: [] at: 2020-06-28 10:45:59.032
+2020-06-28 10:45:59,052 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Using 'application/json', given [*/*] and supported [application/json]
+2020-06-28 10:45:59,055 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Writing ["{'message' : 'Hello, World'}"]
+2020-06-28 10:45:59,069 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed 200 OK
+2020-06-28 10:47:03,055 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] GET "/", parameters={}
+2020-06-28 10:47:03,057 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-5] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.hello()
+2020-06-28 10:47:03,057 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-5] Calling GET request without an accept header as: [] at: 2020-06-28 10:47:03.057
+2020-06-28 10:47:03,067 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-5] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-06-28 10:47:03,068 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-5] Writing ["<p>Hello, World</p>"]
+2020-06-28 10:47:03,070 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-5] Completed 200 OK
+2020-06-28 10:48:21,984 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-9] POST "/", parameters={}
+2020-06-28 10:48:21,986 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-9] Mapped to public org.springframework.http.ResponseEntity<java.lang.String> com.example.helloworldapi.controller.HelloWorldController.postMethod(java.lang.String)
+2020-06-28 10:48:21,995 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-9] Read "application/json;charset=UTF-8" to ["{
+	"message": "Hi!"
+}"]
+2020-06-28 10:48:22,012 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-9] Calling POST request with an accept header as: [] at: 2020-06-28 10:48:22.012
+2020-06-28 10:48:22,014 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor [http-nio-8080-exec-9] Using 'application/json', given [*/*] and supported [application/json]
+2020-06-28 10:48:22,015 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor [http-nio-8080-exec-9] Writing ["Message was: {
+	"message": "Hi!"
+}"]
+2020-06-28 10:48:22,018 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-9] Completed 201 CREATED
+2020-06-28 10:49:28,481 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] GET "/", parameters={}
+2020-06-28 10:49:28,482 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-1] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.hello()
+2020-06-28 10:49:28,485 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-1] Calling GET request without an accept header as: [] at: 2020-06-28 10:49:28.485
+2020-06-28 10:49:28,486 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-1] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-06-28 10:49:28,486 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-1] Writing ["<p>Hello, World</p>"]
+2020-06-28 10:49:28,489 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed 200 OK
+2020-06-28 10:52:37,933 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 11704 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 10:52:37,953 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 10:52:37,953 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 10:52:39,798 DEBUG o.s.w.c.ContextLoader [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-28 10:52:39,799 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1808 ms
+2020-06-28 10:52:40,639 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-06-28 10:52:40,863 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-28 10:52:40,925 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [main] 5 mappings in 'requestMappingHandlerMapping'
+2020-06-28 10:52:40,985 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-06-28 10:52:41,004 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-28 10:52:41,337 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 6.045 seconds (JVM running for 12.581)
+2020-06-28 10:52:48,295 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-06-28 10:52:48,296 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2020-06-28 10:52:48,390 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-28 10:52:48,390 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 94 ms
+2020-06-28 10:52:48,398 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] GET "/", parameters={}
+2020-06-28 10:52:48,404 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.hello()
+2020-06-28 10:52:48,416 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header as: [] at: 2020-06-28 10:52:48.416
+2020-06-28 10:52:48,425 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-06-28 10:52:48,426 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Writing ["<p>Hello, World</p>"]
+2020-06-28 10:52:48,433 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed 200 OK
+2020-06-28 10:53:14,841 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 10280 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 10:53:14,858 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 10:53:14,858 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 10:53:16,728 DEBUG o.s.w.c.ContextLoader [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-28 10:53:16,730 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1816 ms
+2020-06-28 10:53:17,566 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-06-28 10:53:17,779 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-28 10:53:17,849 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [main] 5 mappings in 'requestMappingHandlerMapping'
+2020-06-28 10:53:17,882 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-06-28 10:53:17,891 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-28 10:53:18,214 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 5.891 seconds (JVM running for 12.662)
+2020-06-28 10:53:30,257 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-06-28 10:53:30,258 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2020-06-28 10:53:30,375 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-28 10:53:30,376 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 118 ms
+2020-06-28 10:53:30,387 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] GET "/", parameters={}
+2020-06-28 10:53:30,391 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.hello()
+2020-06-28 10:53:30,401 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header as: [] at: 2020-06-28 10:53:30.401
+2020-06-28 10:53:30,416 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-06-28 10:53:30,417 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Writing ["<p>Hello, World</p>"]
+2020-06-28 10:53:30,425 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed 200 OK
+2020-06-28 10:56:18,035 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 7216 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 10:56:18,049 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 10:56:18,051 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 10:56:21,635 DEBUG o.s.w.c.ContextLoader [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-28 10:56:21,637 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 3466 ms
+2020-06-28 10:56:22,566 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-06-28 10:56:22,779 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-28 10:56:22,888 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [main] 5 mappings in 'requestMappingHandlerMapping'
+2020-06-28 10:56:22,932 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-06-28 10:56:22,943 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-28 10:56:23,343 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 8.089 seconds (JVM running for 13.457)
+2020-06-28 10:56:27,983 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2020-06-28 10:56:27,998 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] Detected StandardServletMultipartResolver
+2020-06-28 10:56:28,150 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-28 10:56:28,152 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] Completed initialization in 154 ms
+2020-06-28 10:56:28,166 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] GET "/", parameters={}
+2020-06-28 10:56:28,172 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-10] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.hello()
+2020-06-28 10:56:28,205 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-10] Calling GET request without an accept header as: [] at: 2020-06-28 10:56:28.205
+2020-06-28 10:56:28,226 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-10] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-06-28 10:56:28,226 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-10] Writing ["<p>Hello, World</p>"]
+2020-06-28 10:56:28,240 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-10] Completed 200 OK
+2020-06-28 11:00:00,092 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 8036 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 11:00:00,133 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 11:00:00,134 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 11:00:03,774 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 6.107 seconds (JVM running for 12.842)
+2020-06-28 11:00:15,921 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header as: [] at: 2020-06-28 11:00:15.921
+2020-06-28 11:01:29,291 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 4052 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 11:01:29,312 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 11:01:29,313 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 11:01:32,736 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 6.005 seconds (JVM running for 12.551)
+2020-06-28 11:01:40,007 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header as: [] at: 2020-06-28 11:01:40.007
+2020-06-28 11:02:34,462 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 5600 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 11:02:34,482 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 11:02:34,482 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 11:02:34,582 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-06-28 11:02:34,601 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2020-06-28 11:02:34,690 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: file [C:\Training-WS\HelloWorldAPI\target\classes\com\example\helloworldapi\controller\HelloWorldController.class]
+2020-06-28 11:02:34,965 DEBUG o.s.c.e.PropertySourcesPropertyResolver [main] Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-06-28 11:02:35,108 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/RepositorySearchController.class]
+2020-06-28 11:02:35,111 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/ProfileController.class]
+2020-06-28 11:02:35,113 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/RepositoryEntityController.class]
+2020-06-28 11:02:35,116 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/alps/AlpsController.class]
+2020-06-28 11:02:35,127 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/RepositoryPropertyReferenceController.class]
+2020-06-28 11:02:35,130 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/RepositoryController.class]
+2020-06-28 11:02:35,192 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Ignored because not a concrete top-level class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/RepositoryRestController.class]
+2020-06-28 11:02:35,203 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner [main] Identified candidate component class: URL [jar:file:/C:/Users/vshah/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.1.18.RELEASE/spring-data-rest-webmvc-3.1.18.RELEASE.jar!/org/springframework/data/rest/webmvc/RepositorySchemaController.class]
+2020-06-28 11:02:35,267 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2020-06-28 11:02:35,380 DEBUG o.s.c.e.PropertySourcesPropertyResolver [main] Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-06-28 11:02:35,706 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2020-06-28 11:02:35,713 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-06-28 11:02:35,715 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2020-06-28 11:02:35,715 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+2020-06-28 11:02:35,717 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-06-28 11:02:35,725 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-06-28 11:02:35,727 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-06-28 11:02:35,734 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2020-06-28 11:02:35,738 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'methodValidationPostProcessor'
+2020-06-28 11:02:35,754 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+2020-06-28 11:02:35,762 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2020-06-28 11:02:35,764 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2020-06-28 11:02:35,767 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+2020-06-28 11:02:35,770 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+2020-06-28 11:02:35,772 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jackson2ModuleRegisteringBeanPostProcessor'
+2020-06-28 11:02:35,773 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.hateoas.config.HateoasConfiguration'
+2020-06-28 11:02:35,776 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$61ffcdbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-28 11:02:35,792 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'projectionDefinitionRegistrar'
+2020-06-28 11:02:35,794 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'annotatedEventHandlerInvoker'
+2020-06-28 11:02:35,812 DEBUG o.s.u.c.s.UiApplicationContextUtils [main] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@b79cbe]
+2020-06-28 11:02:35,815 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+2020-06-28 11:02:35,816 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+2020-06-28 11:02:35,871 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+2020-06-28 11:02:35,871 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+2020-06-28 11:02:35,890 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+2020-06-28 11:02:35,891 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+2020-06-28 11:02:35,896 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2020-06-28 11:02:35,917 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2020-06-28 11:02:35,921 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+2020-06-28 11:02:35,924 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2020-06-28 11:02:35,929 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+2020-06-28 11:02:35,930 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+2020-06-28 11:02:35,935 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+2020-06-28 11:02:35,936 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2020-06-28 11:02:35,942 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+2020-06-28 11:02:35,944 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+2020-06-28 11:02:35,946 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration$$EnhancerBySpringCGLIB$$b5d4372b] - unable to determine constructor/method parameter names
+2020-06-28 11:02:35,949 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2020-06-28 11:02:35,953 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2020-06-28 11:02:35,992 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'errorPageCustomizer'
+2020-06-28 11:02:35,995 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+2020-06-28 11:02:35,997 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$$EnhancerBySpringCGLIB$$e2b860e] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,000 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'dispatcherServletRegistration'
+2020-06-28 11:02:36,000 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+2020-06-28 11:02:36,001 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$9486a4f9] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,001 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2020-06-28 11:02:36,005 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2020-06-28 11:02:36,006 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'multipartConfigElement'
+2020-06-28 11:02:36,006 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+2020-06-28 11:02:36,006 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration$$EnhancerBySpringCGLIB$$24c4bf38] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2020-06-28 11:02:36,019 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2020-06-28 11:02:36,032 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'dispatcherServlet'
+2020-06-28 11:02:36,033 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+2020-06-28 11:02:36,034 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration$$EnhancerBySpringCGLIB$$327f1052] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,038 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2020-06-28 11:02:36,040 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2020-06-28 11:02:36,073 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+2020-06-28 11:02:36,090 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2020-06-28 11:02:36,090 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'dispatcherServletRegistration'
+2020-06-28 11:02:36,091 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'conventionErrorViewResolver'
+2020-06-28 11:02:36,093 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+2020-06-28 11:02:36,094 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration$$EnhancerBySpringCGLIB$$22c05aae] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,095 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2020-06-28 11:02:36,099 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@194fad1'
+2020-06-28 11:02:36,100 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2020-06-28 11:02:36,367 DEBUG o.s.w.c.ContextLoader [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-28 11:02:36,368 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1833 ms
+2020-06-28 11:02:36,373 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'requestContextFilter'
+2020-06-28 11:02:36,434 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'hiddenHttpMethodFilter'
+2020-06-28 11:02:36,436 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+2020-06-28 11:02:36,469 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'formContentFilter'
+2020-06-28 11:02:36,491 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'characterEncodingFilter'
+2020-06-28 11:02:36,567 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'helloWorldApiApplication'
+2020-06-28 11:02:36,570 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'helloWorldController'
+2020-06-28 11:02:36,574 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositorySearchController'
+2020-06-28 11:02:36,591 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'pagedResourcesAssembler'
+2020-06-28 11:02:36,593 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration'
+2020-06-28 11:02:36,595 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration$$EnhancerBySpringCGLIB$$3829f29] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,598 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@194fad1'
+2020-06-28 11:02:36,620 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'springBootRepositoryRestConfigurer'
+2020-06-28 11:02:36,621 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.rest.RepositoryRestMvcAutoConfiguration'
+2020-06-28 11:02:36,628 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jacksonObjectMapperBuilder'
+2020-06-28 11:02:36,629 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+2020-06-28 11:02:36,629 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$f05fc233] - unable to determine constructor/method parameter names
+2020-06-28 11:02:36,629 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@194fad1'
+2020-06-28 11:02:36,638 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+2020-06-28 11:02:36,642 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+2020-06-28 11:02:36,646 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2020-06-28 11:02:36,651 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@194fad1'
+2020-06-28 11:02:36,651 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2020-06-28 11:02:36,662 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+2020-06-28 11:02:36,668 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'parameterNamesModule'
+2020-06-28 11:02:36,668 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+2020-06-28 11:02:36,688 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jsonComponentModule'
+2020-06-28 11:02:36,688 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+2020-06-28 11:02:36,705 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jacksonGeoModule'
+2020-06-28 11:02:36,705 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
+2020-06-28 11:02:36,723 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.data.rest-org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties'
+2020-06-28 11:02:36,728 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean '_relProvider'
+2020-06-28 11:02:36,729 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'relProviderPluginRegistry'
+2020-06-28 11:02:36,737 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name '_relProvider' via factory method to bean named 'relProviderPluginRegistry'
+2020-06-28 11:02:36,753 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'pageableResolver'
+2020-06-28 11:02:36,766 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'sortResolver'
+2020-06-28 11:02:36,768 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryRestConfiguration'
+2020-06-28 11:02:36,775 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositories'
+2020-06-28 11:02:36,857 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'metadataConfiguration'
+2020-06-28 11:02:36,862 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'enumTranslator'
+2020-06-28 11:02:36,862 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'resourceDescriptionMessageSourceAccessor'
+2020-06-28 11:02:36,903 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'entityLinks'
+2020-06-28 11:02:36,912 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'resourceMappings'
+2020-06-28 11:02:36,914 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'persistentEntities'
+2020-06-28 11:02:36,934 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'backendIdConverterRegistry'
+2020-06-28 11:02:36,944 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'httpHeadersPreparer'
+2020-06-28 11:02:36,945 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'auditableBeanWrapperFactory'
+2020-06-28 11:02:36,956 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositorySearchController' via constructor to bean named 'pagedResourcesAssembler'
+2020-06-28 11:02:36,956 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositorySearchController' via constructor to bean named 'entityLinks'
+2020-06-28 11:02:36,956 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositorySearchController' via constructor to bean named 'resourceMappings'
+2020-06-28 11:02:36,956 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositorySearchController' via constructor to bean named 'httpHeadersPreparer'
+2020-06-28 11:02:36,959 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'profileController'
+2020-06-28 11:02:36,962 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'profileController' via constructor to bean named 'repositoryRestConfiguration'
+2020-06-28 11:02:36,964 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'profileController' via constructor to bean named 'resourceMappings'
+2020-06-28 11:02:36,967 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'profileController' via constructor to bean named 'repositories'
+2020-06-28 11:02:36,969 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryEntityController'
+2020-06-28 11:02:36,975 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryEntityController' via constructor to bean named 'repositories'
+2020-06-28 11:02:36,977 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryEntityController' via constructor to bean named 'repositoryRestConfiguration'
+2020-06-28 11:02:36,979 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryEntityController' via constructor to bean named 'entityLinks'
+2020-06-28 11:02:36,980 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryEntityController' via constructor to bean named 'pagedResourcesAssembler'
+2020-06-28 11:02:36,982 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryEntityController' via constructor to bean named 'httpHeadersPreparer'
+2020-06-28 11:02:36,996 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'alpsController'
+2020-06-28 11:02:36,998 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'alpsController' via constructor to bean named 'repositoryRestConfiguration'
+2020-06-28 11:02:37,002 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryPropertyReferenceController'
+2020-06-28 11:02:37,007 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryInvokerFactory'
+2020-06-28 11:02:37,011 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'defaultConversionService'
+2020-06-28 11:02:37,014 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryInvokerFactory'
+2020-06-28 11:02:37,035 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryInvokerFactory' via factory method to bean named 'defaultConversionService'
+2020-06-28 11:02:37,035 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryPropertyReferenceController' via constructor to bean named 'repositories'
+2020-06-28 11:02:37,035 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryPropertyReferenceController' via constructor to bean named 'repositoryInvokerFactory'
+2020-06-28 11:02:37,036 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryPropertyReferenceController' via constructor to bean named 'pagedResourcesAssembler'
+2020-06-28 11:02:37,039 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryController'
+2020-06-28 11:02:37,041 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'controllerEntityLinks'
+2020-06-28 11:02:37,043 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.hateoas.config.EntityLinksConfiguration'
+2020-06-28 11:02:37,058 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'controllerLinkBuilderFactoryBean'
+2020-06-28 11:02:37,067 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'controllerEntityLinks' via factory method to bean named 'controllerLinkBuilderFactoryBean'
+2020-06-28 11:02:37,076 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'delegatingEntityLinks'
+2020-06-28 11:02:37,078 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'entityLinksPluginRegistry'
+2020-06-28 11:02:37,082 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'delegatingEntityLinks' via factory method to bean named 'entityLinksPluginRegistry'
+2020-06-28 11:02:37,089 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryController' via constructor to bean named 'pagedResourcesAssembler'
+2020-06-28 11:02:37,089 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryController' via constructor to bean named 'repositories'
+2020-06-28 11:02:37,089 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryController' via constructor to bean named 'delegatingEntityLinks'
+2020-06-28 11:02:37,089 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositoryController' via constructor to bean named 'resourceMappings'
+2020-06-28 11:02:37,091 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositorySchemaController'
+2020-06-28 11:02:37,094 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jsonSchemaConverter'
+2020-06-28 11:02:37,103 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'associationLinks'
+2020-06-28 11:02:37,107 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jacksonObjectMapper'
+2020-06-28 11:02:37,107 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+2020-06-28 11:02:37,112 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+2020-06-28 11:02:37,164 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'excerptProjector'
+2020-06-28 11:02:37,172 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'linkCollector'
+2020-06-28 11:02:37,173 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'selfLinkProvider'
+2020-06-28 11:02:37,177 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'resourceProcessorInvoker'
+2020-06-28 11:02:37,178 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'profileResourceProcessor'
+2020-06-28 11:02:37,178 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'profileResourceProcessor' via factory method to bean named 'repositoryRestConfiguration'
+2020-06-28 11:02:37,192 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'repositorySchemaController' via constructor to bean named 'jsonSchemaConverter'
+2020-06-28 11:02:37,193 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2020-06-28 11:02:37,199 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2020-06-28 11:02:37,201 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+2020-06-28 11:02:37,204 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+2020-06-28 11:02:37,206 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2020-06-28 11:02:37,208 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration$$EnhancerBySpringCGLIB$$6e1f195f] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,211 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2020-06-28 11:02:37,214 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration' via constructor to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2020-06-28 11:02:37,216 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'taskExecutorBuilder'
+2020-06-28 11:02:37,221 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration'
+2020-06-28 11:02:37,223 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'defaultValidator'
+2020-06-28 11:02:37,247 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+2020-06-28 11:02:37,253 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'error'
+2020-06-28 11:02:37,257 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'beanNameViewResolver'
+2020-06-28 11:02:37,263 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'errorAttributes'
+2020-06-28 11:02:37,265 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'basicErrorController'
+2020-06-28 11:02:37,266 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+2020-06-28 11:02:37,268 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration'
+2020-06-28 11:02:37,268 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration$$EnhancerBySpringCGLIB$$abada434] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,269 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2020-06-28 11:02:37,271 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'faviconHandlerMapping'
+2020-06-28 11:02:37,274 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'faviconRequestHandler'
+2020-06-28 11:02:37,309 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-06-28 11:02:37,310 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+2020-06-28 11:02:37,310 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$4d6cd109] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,312 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2020-06-28 11:02:37,312 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@12c1b98'
+2020-06-28 11:02:37,321 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+2020-06-28 11:02:37,322 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$$EnhancerBySpringCGLIB$$ef709bee] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,323 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2020-06-28 11:02:37,325 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2020-06-28 11:02:37,327 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@12c1b98'
+2020-06-28 11:02:37,332 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.hateoas.config.ConverterRegisteringWebMvcConfigurer#0'
+2020-06-28 11:02:37,342 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.hateoas.config.ConverterRegisteringWebMvcConfigurer$$EnhancerBySpringCGLIB$$91da0ccd] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,352 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2020-06-28 11:02:37,360 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2020-06-28 11:02:37,367 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'messageConverters'
+2020-06-28 11:02:37,367 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+2020-06-28 11:02:37,367 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$fcb34c1d] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,368 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'stringHttpMessageConverter'
+2020-06-28 11:02:37,368 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+2020-06-28 11:02:37,369 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$2fc112bd] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,371 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2020-06-28 11:02:37,394 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+2020-06-28 11:02:37,394 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+2020-06-28 11:02:37,397 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+2020-06-28 11:02:37,402 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jacksonHttpMessageConverter'
+2020-06-28 11:02:37,408 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'halJacksonHttpMessageConverter'
+2020-06-28 11:02:37,428 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'uriListHttpMessageConverter'
+2020-06-28 11:02:37,441 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'alpsJsonHttpMessageConverter'
+2020-06-28 11:02:37,447 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'alpsConverter'
+2020-06-28 11:02:37,475 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcConversionService'
+2020-06-28 11:02:37,486 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcValidator'
+2020-06-28 11:02:37,492 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'pagedResourcesAssemblerArgumentResolver'
+2020-06-28 11:02:37,496 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'applicationTaskExecutor'
+2020-06-28 11:02:37,498 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+2020-06-28 11:02:37,514 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-28 11:02:37,548 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-28 11:02:37,568 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2020-06-28 11:02:37,574 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2020-06-28 11:02:37,610 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [main] 5 mappings in 'requestMappingHandlerMapping'
+2020-06-28 11:02:37,612 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+2020-06-28 11:02:37,614 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@194fad1'
+2020-06-28 11:02:37,632 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcPathMatcher'
+2020-06-28 11:02:37,636 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2020-06-28 11:02:37,640 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2020-06-28 11:02:37,647 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2020-06-28 11:02:37,663 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'resourceHandlerMapping'
+2020-06-28 11:02:37,671 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-06-28 11:02:37,678 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2020-06-28 11:02:37,679 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2020-06-28 11:02:37,683 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2020-06-28 11:02:37,684 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2020-06-28 11:02:37,686 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'handlerExceptionResolver'
+2020-06-28 11:02:37,692 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-28 11:02:37,695 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'baseUri'
+2020-06-28 11:02:37,700 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'serverHttpRequestMethodArgumentResolver'
+2020-06-28 11:02:37,703 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repoRequestArgumentResolver'
+2020-06-28 11:02:37,704 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'resourceMetadataHandlerMethodArgumentResolver'
+2020-06-28 11:02:37,707 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'persistentEntityArgumentResolver'
+2020-06-28 11:02:37,707 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'defaultMessageConverters'
+2020-06-28 11:02:37,715 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'backendIdHandlerMethodArgumentResolver'
+2020-06-28 11:02:37,722 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'eTagArgumentResolver'
+2020-06-28 11:02:37,732 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mvcViewResolver'
+2020-06-28 11:02:37,740 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'defaultViewResolver'
+2020-06-28 11:02:37,755 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'viewResolver'
+2020-06-28 11:02:37,755 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@12c1b98'
+2020-06-28 11:02:37,764 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2020-06-28 11:02:37,777 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mbeanExporter'
+2020-06-28 11:02:37,781 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'objectNamingStrategy'
+2020-06-28 11:02:37,786 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+2020-06-28 11:02:37,792 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'mbeanServer'
+2020-06-28 11:02:37,795 DEBUG o.s.j.s.JmxUtils [main] Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@194fa3e
+2020-06-28 11:02:37,807 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2020-06-28 11:02:37,807 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration$$EnhancerBySpringCGLIB$$752c2157] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,808 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration' via constructor to bean named 'environment'
+2020-06-28 11:02:37,811 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+2020-06-28 11:02:37,820 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2020-06-28 11:02:37,822 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+2020-06-28 11:02:37,824 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+2020-06-28 11:02:37,826 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'linkRelationMessageSource'
+2020-06-28 11:02:37,827 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'defaultRelProvider'
+2020-06-28 11:02:37,836 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'annotationRelProvider'
+2020-06-28 11:02:37,839 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'linkDiscoverers'
+2020-06-28 11:02:37,842 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'linkDiscovererRegistry'
+2020-06-28 11:02:37,842 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'linkDiscoverers' via factory method to bean named 'linkDiscovererRegistry'
+2020-06-28 11:02:37,843 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryRelProvider'
+2020-06-28 11:02:37,847 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'validatingRepositoryEventListener'
+2020-06-28 11:02:37,852 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jpaHelper'
+2020-06-28 11:02:37,855 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryExporterHandlerAdapter'
+2020-06-28 11:02:37,874 DEBUG o.s.d.r.w.RepositoryRestHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 0 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-28 11:02:37,876 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'restHandlerMapping'
+2020-06-28 11:02:37,885 DEBUG o.s.c.a.ConfigurationClassEnhancer [main] @Bean method RepositoryRestMvcConfiguration.jpaHelper called as bean reference for type [org.springframework.data.rest.webmvc.support.JpaHelper] returned null bean; resolving to null value.
+2020-06-28 11:02:37,901 DEBUG o.s.d.r.w.RepositoryRestHandlerMapping [main] 27 mappings in <unknown>
+2020-06-28 11:02:37,905 DEBUG o.s.d.r.w.BasePathAwareHandlerMapping [main] 5 mappings in <unknown>
+2020-06-28 11:02:37,907 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'repositoryRestExceptionHandler'
+2020-06-28 11:02:37,910 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.hateoas.HypermediaHttpMessageConverterConfiguration'
+2020-06-28 11:02:37,914 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'halMessageConverterSupportedMediaTypeCustomizer'
+2020-06-28 11:02:37,918 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration'
+2020-06-28 11:02:37,921 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.hateoas-org.springframework.boot.autoconfigure.hateoas.HateoasProperties'
+2020-06-28 11:02:37,924 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$LoggingCodecConfiguration'
+2020-06-28 11:02:37,928 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'loggingCodecCustomizer'
+2020-06-28 11:02:37,931 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'loggingCodecCustomizer' via factory method to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2020-06-28 11:02:37,938 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration'
+2020-06-28 11:02:37,941 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'jacksonCodecCustomizer'
+2020-06-28 11:02:37,941 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'jacksonCodecCustomizer' via factory method to bean named 'jacksonObjectMapper'
+2020-06-28 11:02:37,944 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration'
+2020-06-28 11:02:37,947 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2020-06-28 11:02:37,947 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$1e798da2] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,948 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2020-06-28 11:02:37,949 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2020-06-28 11:02:37,952 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+2020-06-28 11:02:37,954 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'taskSchedulerBuilder'
+2020-06-28 11:02:37,957 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2020-06-28 11:02:37,960 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2020-06-28 11:02:37,965 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+2020-06-28 11:02:37,969 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+2020-06-28 11:02:37,971 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+2020-06-28 11:02:37,975 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+2020-06-28 11:02:37,977 DEBUG o.s.c.LocalVariableTableParameterNameDiscoverer [main] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration$$EnhancerBySpringCGLIB$$7d957a0a] - unable to determine constructor/method parameter names
+2020-06-28 11:02:37,981 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'restTemplateBuilder'
+2020-06-28 11:02:37,994 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2020-06-28 11:02:37,997 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'multipartResolver'
+2020-06-28 11:02:38,012 DEBUG o.s.j.e.a.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-06-28 11:02:38,013 DEBUG o.s.j.e.a.AnnotationMBeanExporter [main] Autodetecting user-defined JMX MBeans
+2020-06-28 11:02:38,126 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 6.4 seconds (JVM running for 13.174)
+2020-06-28 11:02:43,256 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-06-28 11:02:43,259 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2020-06-28 11:02:43,347 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-28 11:02:43,347 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 88 ms
+2020-06-28 11:02:43,368 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] GET "/", parameters={}
+2020-06-28 11:02:43,376 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping [http-nio-8080-exec-2] Mapped to public java.lang.String com.example.helloworldapi.controller.HelloWorldController.hello()
+2020-06-28 11:02:43,390 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header as: [] at: 2020-06-28 11:02:43.39
+2020-06-28 11:02:43,405 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-06-28 11:02:43,406 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor [http-nio-8080-exec-2] Writing ["<p>Hello, World</p>"]
+2020-06-28 11:02:43,419 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-2] Completed 200 OK
+2020-06-28 11:03:55,243 DEBUG o.s.j.e.a.AnnotationMBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2020-06-28 11:03:55,245 INFO o.s.s.c.ThreadPoolTaskExecutor [RMI TCP Connection(2)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-28 11:04:16,278 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 10600 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 11:04:16,324 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 11:04:16,326 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 11:04:19,916 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 5.821 seconds (JVM running for 12.658)
+2020-06-28 11:04:38,375 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header as: [] at: 2020-06-28 11:04:38.374
+2020-06-28 11:05:32,576 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 12928 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 11:05:32,596 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 11:05:32,597 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 11:05:36,086 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 5.889 seconds (JVM running for 12.282)
+2020-06-28 11:05:46,601 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header at: 2020-06-28 11:05:46.6
+2020-06-28 11:09:11,150 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 6156 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 11:09:11,167 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 11:09:11,172 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 11:09:14,628 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 5.934 seconds (JVM running for 12.83)
+2020-06-28 11:09:57,952 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-1] Calling GET request without an accept header at: 2020-06-28 11:09:57.952
+2020-06-28 11:20:44,301 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-8] Calling GET request without an accept header at: 2020-06-28 11:20:44.301
+2020-06-28 11:27:44,026 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header at: 2020-06-28 11:27:44.026
+2020-06-28 11:29:07,020 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-4] Calling GET request with an accept header as: [] at: 2020-06-28 11:29:07.02
+2020-06-28 11:33:46,817 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-3] Calling POST request with an accept header as: [] at: 2020-06-28 11:33:46.817
+2020-06-28 14:58:57,442 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 11788 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 14:58:57,459 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 14:58:57,462 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 14:58:59,765 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 3.005 seconds (JVM running for 10.855)
+2020-06-28 14:59:00,143 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 14:59:00.143
+2020-06-28 14:59:55,865 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 9580 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 14:59:55,882 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 14:59:55,884 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 14:59:58,075 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 2.841 seconds (JVM running for 10.46)
+2020-06-28 14:59:58,414 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 14:59:58.414
+2020-06-28 15:00:44,226 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 5340 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:00:44,253 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:00:44,256 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:00:46,589 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 2.991 seconds (JVM running for 10.97)
+2020-06-28 15:00:46,835 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:00:46.835
+2020-06-28 15:02:07,389 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 4120 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:02:07,416 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:02:07,418 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:02:09,607 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 2.782 seconds (JVM running for 10.444)
+2020-06-28 15:02:09,918 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:02:09.918
+2020-06-28 15:02:25,745 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 10300 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:02:25,765 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:02:25,771 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:02:28,935 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 5.083 seconds (JVM running for 13.17)
+2020-06-28 15:02:29,286 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:02:29.286
+2020-06-28 15:05:47,285 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-9] Calling GET request without an accept header at: 2020-06-28 15:05:47.285
+2020-06-28 15:06:13,481 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-10] Calling GET request without an accept header at: 2020-06-28 15:06:13.481
+2020-06-28 15:06:40,579 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-7] Calling GET request without an accept header at: 2020-06-28 15:06:40.579
+2020-06-28 15:09:19,424 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-4] Calling GET request without an accept header at: 2020-06-28 15:09:19.424
+2020-06-28 15:09:57,692 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-8] Calling GET request without an accept header at: 2020-06-28 15:09:57.692
+2020-06-28 15:09:58,424 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-3] Calling GET request without an accept header at: 2020-06-28 15:09:58.424
+2020-06-28 15:11:50,858 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-9] Calling GET request without an accept header at: 2020-06-28 15:11:50.858
+2020-06-28 15:11:51,741 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-10] Calling GET request without an accept header at: 2020-06-28 15:11:51.74
+2020-06-28 15:12:53,506 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 10952 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:12:53,522 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:12:53,523 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:12:57,232 INFO c.e.h.HelloWorldApiApplication [main] Started HelloWorldApiApplication in 6.231 seconds (JVM running for 13.426)
+2020-06-28 15:13:02,624 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-1] Calling GET request without an accept header at: 2020-06-28 15:13:02.624
+2020-06-28 15:15:05,755 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-5] Calling GET request without an accept header at: 2020-06-28 15:15:05.755
+2020-06-28 15:15:08,191 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-7] Calling GET request without an accept header at: 2020-06-28 15:15:08.191
+2020-06-28 15:16:34,480 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-6] Calling GET request without an accept header at: 2020-06-28 15:16:34.48
+2020-06-28 15:16:37,674 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-10] Calling GET request without an accept header at: 2020-06-28 15:16:37.674
+2020-06-28 15:16:42,496 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-2] Calling GET request without an accept header at: 2020-06-28 15:16:42.496
+2020-06-28 15:16:47,020 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-1] Calling GET request without an accept header at: 2020-06-28 15:16:47.02
+2020-06-28 15:16:47,800 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-3] Calling GET request without an accept header at: 2020-06-28 15:16:47.8
+2020-06-28 15:19:47,508 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-5] Calling GET request without an accept header at: 2020-06-28 15:19:47.508
+2020-06-28 15:19:48,938 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-8] Calling GET request without an accept header at: 2020-06-28 15:19:48.938
+2020-06-28 15:20:28,226 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-9] Calling GET request with an accept header as: [] at: 2020-06-28 15:20:28.226
+2020-06-28 15:20:46,060 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-6] Calling GET request without an accept header at: 2020-06-28 15:20:46.06
+2020-06-28 15:20:51,598 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-10] Calling GET request with an accept header as: [] at: 2020-06-28 15:20:51.598
+2020-06-28 15:21:38,387 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 6744 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:21:38,400 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:21:38,404 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:21:40,669 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 3.027 seconds (JVM running for 10.712)
+2020-06-28 15:21:40,923 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:21:40.923
+2020-06-28 15:21:40,945 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:21:40.945
+2020-06-28 15:21:58,289 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 9964 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:21:58,315 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:21:58,317 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:22:01,504 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 3.999 seconds (JVM running for 13.019)
+2020-06-28 15:22:01,877 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:22:01.876
+2020-06-28 15:22:01,920 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:22:01.92
+2020-06-28 15:28:39,068 DEBUG c.e.h.c.HelloWorldController [http-nio-8080-exec-3] Calling POST request with an accept header as: [] at: 2020-06-28 15:28:39.068
+2020-06-28 15:29:41,651 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 608 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:29:41,660 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:29:41,664 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:29:43,866 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 2.796 seconds (JVM running for 10.774)
+2020-06-28 15:29:44,156 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:29:44.156
+2020-06-28 15:29:44,176 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:29:44.176
+2020-06-28 15:29:44,184 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:29:44.184
+2020-06-28 15:30:37,421 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 8064 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:30:37,435 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:30:37,438 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:30:39,797 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 3.434 seconds (JVM running for 10.897)
+2020-06-28 15:30:40,069 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:30:40.068
+2020-06-28 15:30:40,091 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:30:40.091
+2020-06-28 15:30:40,099 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:30:40.099
+2020-06-28 15:30:55,921 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 5428 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:30:55,938 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:30:55,940 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:30:59,308 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 4.175 seconds (JVM running for 13.352)
+2020-06-28 15:30:59,717 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:30:59.717
+2020-06-28 15:30:59,747 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:30:59.747
+2020-06-28 15:30:59,754 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:30:59.754
+2020-06-28 15:36:10,484 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 7304 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:36:10,506 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:36:10,507 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:36:12,792 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 3.03 seconds (JVM running for 10.408)
+2020-06-28 15:36:13,045 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:36:13.045
+2020-06-28 15:36:13,074 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:36:13.074
+2020-06-28 15:36:13,080 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:36:13.08
+2020-06-28 15:36:34,909 INFO c.e.h.HelloWorldApiApplication [main] Starting HelloWorldApiApplication on ussd-dev-ffau09 with PID 9276 (C:\Training-WS\HelloWorldAPI\target\classes started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:36:34,917 DEBUG c.e.h.HelloWorldApiApplication [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:36:34,919 INFO c.e.h.HelloWorldApiApplication [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:37:00,561 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 12548 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:37:00,594 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:37:00,598 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:37:03,855 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 5.135 seconds (JVM running for 13.077)
+2020-06-28 15:37:04,222 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:37:04.222
+2020-06-28 15:37:04,265 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:37:04.265
+2020-06-28 15:37:04,285 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:37:04.285
+2020-06-28 15:42:21,765 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 12244 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:42:21,777 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:42:21,780 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:42:24,138 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 3.085 seconds (JVM running for 11.693)
+2020-06-28 15:42:24,461 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:42:24.461
+2020-06-28 15:42:24,480 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:42:24.48
+2020-06-28 15:42:24,486 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:42:24.485
+2020-06-28 15:42:46,400 INFO c.e.h.HelloWorldApiApplicationTest [main] Starting HelloWorldApiApplicationTest on ussd-dev-ffau09 with PID 10600 (started by vshah in C:\Training-WS\HelloWorldAPI)
+2020-06-28 15:42:46,416 DEBUG c.e.h.HelloWorldApiApplicationTest [main] Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-06-28 15:42:46,419 INFO c.e.h.HelloWorldApiApplicationTest [main] No active profile set, falling back to default profiles: default
+2020-06-28 15:42:49,732 INFO c.e.h.HelloWorldApiApplicationTest [main] Started HelloWorldApiApplicationTest in 4.039 seconds (JVM running for 13.699)
+2020-06-28 15:42:50,128 DEBUG c.e.h.c.HelloWorldController [main] Calling POST request with an accept header as: [] at: 2020-06-28 15:42:50.128
+2020-06-28 15:42:50,162 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request with an accept header as: [] at: 2020-06-28 15:42:50.162
+2020-06-28 15:42:50,174 DEBUG c.e.h.c.HelloWorldController [main] Calling GET request without an accept header at: 2020-06-28 15:42:50.174
